@@ -1,0 +1,132 @@
+#VRML V2.0 utf8
+
+Transform {
+  translation 0 0 0
+  children [
+    DEF Cat Group {
+      children [
+
+        # Body
+        Transform {
+          translation 0 0.4 0
+          children [
+            Shape {
+              geometry Box {
+                size 0.5 0.5 1
+              }
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.5 0.5 0.5
+                }
+              }
+            }
+          ]
+        }
+
+        # Head
+        Transform {
+          translation 0 0.7 0.5
+          children [
+            Shape {
+              geometry Sphere {
+                radius 0.25
+              }
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.5 0.5 0.5
+                }
+              }
+            }
+          ]
+        }
+
+        # Eyes
+        Transform {
+          translation -0.1 0.75 0.7
+          children [
+            Shape {
+              geometry Sphere {
+                radius 0.05
+              }
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0 0 0
+                }
+              }
+            }
+          ]
+        }
+        Transform {
+          translation 0.1 0.75 0.7
+          children [
+            Shape {
+              geometry Sphere {
+                radius 0.05
+              }
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0 0 0
+                }
+              }
+            }
+          ]
+        }
+
+        # Ears
+        Transform {
+          translation -0.15 0.95 0.55
+          rotation 1 0 0 0.5
+          children [
+            Shape {
+              geometry Cone {
+                bottomRadius 0.1
+                height 0.2
+              }
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.5 0.5 0.5
+                }
+              }
+            }
+          ]
+        }
+        Transform {
+          translation 0.15 0.95 0.55
+          rotation 1 0 0 0.5
+          children [
+            Shape {
+              geometry Cone {
+                bottomRadius 0.1
+                height 0.2
+              }
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.5 0.5 0.5
+                }
+              }
+            }
+          ]
+        }
+
+        # Tail
+        Transform {
+          translation 0 0.4 -0.7
+          rotation 1 0 0 -0.5
+          children [
+            Shape {
+              geometry Cylinder {
+                radius 0.05
+                height 0.6
+              }
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.5 0.5 0.5
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

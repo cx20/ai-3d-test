@@ -1,0 +1,96 @@
+#VRML V2.0 utf8
+
+Transform {
+  children [
+    # 猫の体
+    Transform {
+      translation 0 0.4 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.5
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.6 0.6
+            }
+          }
+        }
+      ]
+    }
+
+    # 猫の頭
+    Transform {
+      translation 0 0.9 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.35
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.6 0.6
+            }
+          }
+        }
+      ]
+    }
+
+    # 猫の耳 (左)
+    Transform {
+      translation -0.2 1.15 0
+      rotation 0 0 1 0.7
+      children [
+        Shape {
+          geometry Cone {
+            bottomRadius 0.1
+            height 0.25
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.6 0.6
+            }
+          }
+        }
+      ]
+    }
+
+    # 猫の耳 (右)
+    Transform {
+      translation 0.2 1.15 0
+      rotation 0 0 1 -0.7
+      children [
+        Shape {
+          geometry Cone {
+            bottomRadius 0.1
+            height 0.25
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.6 0.6
+            }
+          }
+        }
+      ]
+    }
+
+    # 猫の尾
+    Transform {
+      translation 0 0.45 -0.6
+      rotation 1 0 0 0.7
+      children [
+        Shape {
+          geometry Cylinder {
+            radius 0.1
+            height 0.7
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.6 0.6
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
