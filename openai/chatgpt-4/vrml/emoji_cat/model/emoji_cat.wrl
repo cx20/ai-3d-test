@@ -1,0 +1,121 @@
+#VRML V2.0 utf8
+
+# 猫の頭部
+Transform {
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1.0 0.64 0.0 # オレンジ色
+        }
+      }
+      geometry Sphere {
+        radius 1
+      }
+    }
+  ]
+}
+
+# 猫の耳（左）
+Transform {
+  translation -0.6 1.1 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1.0 0.64 0.0 # オレンジ色
+        }
+      }
+      geometry Cone {
+        bottomRadius 0.35
+        height 0.7
+      }
+    }
+  ]
+}
+
+# 猫の耳（右）
+Transform {
+  translation 0.6 1.1 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1.0 0.64 0.0 # オレンジ色
+        }
+      }
+      geometry Cone {
+        bottomRadius 0.35
+        height 0.7
+      }
+    }
+  ]
+}
+
+# 猫の目（左）
+Transform {
+  translation -0.3 0.3 0.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0 # 黒色
+        }
+      }
+      geometry Sphere {
+        radius 0.1
+      }
+    }
+  ]
+}
+
+# 猫の目（右）
+Transform {
+  translation 0.3 0.3 0.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0 # 黒色
+        }
+      }
+      geometry Sphere {
+        radius 0.1
+      }
+    }
+  ]
+}
+
+# 猫の鼻
+Transform {
+  translation 0 0.1 0.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0 # 黒色
+        }
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+}
+
+# 猫の口
+Transform {
+  translation 0 -0.2 0.9
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0 # 黒色
+        }
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+}

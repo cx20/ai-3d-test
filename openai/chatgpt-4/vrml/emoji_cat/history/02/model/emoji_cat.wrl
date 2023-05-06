@@ -1,0 +1,110 @@
+#VRML V2.0 utf8
+
+Transform {
+  children [
+    # 頭部
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 1 0.647 0 }
+      }
+      geometry Sphere { radius 1 }
+    },
+    # 耳 (右)
+    Transform {
+      translation 0.7 1.2 0
+      rotation 0 0 1 0.3
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 1 0.647 0 }
+          }
+          geometry Cone { bottomRadius 0.3 height 0.6 }
+        }
+      ]
+    },
+    # 耳 (左)
+    Transform {
+      translation -0.7 1.2 0
+      rotation 0 0 1 -0.3
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 1 0.647 0 }
+          }
+          geometry Cone { bottomRadius 0.3 height 0.6 }
+        }
+      ]
+    },
+    # 顔 (白い部分)
+    Transform {
+      translation 0 0 0.9
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 1 1 1 }
+          }
+          geometry Sphere { radius 0.7 }
+        }
+      ]
+    },
+    # 目 (右)
+    Transform {
+      translation 0.3 0.2 1.7
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0 0 0 }
+          }
+          geometry Sphere { radius 0.15 }
+        }
+      ]
+    },
+    # 目 (左)
+    Transform {
+      translation -0.3 0.2 1.7
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0 0 0 }
+          }
+          geometry Sphere { radius 0.15 }
+        }
+      ]
+    },
+    # 鼻
+    Transform {
+      translation 0 0 1.6
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 1 0.412 0.706 }
+          }
+          geometry Cone { bottomRadius 0.1 height 0.2 }
+        }
+      ]
+    },
+    # 口
+    Transform {
+      translation 0 -0.3 1.4
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0 0 0 }
+          }
+          geometry IndexedLineSet {
+            coord Coordinate {
+              point [
+                -0.2 -0.1 0,
+                0 0 0,
+                0.2 -0.1 0
+              ]
+            }
+            coordIndex [
+              0, 1, 2, -1
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
