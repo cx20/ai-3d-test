@@ -1,0 +1,151 @@
+#VRML V2.0 utf8
+
+Transform {
+  children [
+    # 頭
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0.64 0
+        }
+      }
+      geometry Box {
+        size 1 1 1
+      }
+    },
+    # 右耳
+    Transform {
+      translation 0.5 0.5 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 0.64 0
+            }
+          }
+          geometry Cone {
+            bottomRadius 0.25
+            height 0.5
+          }
+        }
+      ]
+    },
+    # 左耳
+    Transform {
+      translation -0.5 0.5 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 0.64 0
+            }
+          }
+          geometry Cone {
+            bottomRadius 0.25
+            height 0.5
+          }
+        }
+      ]
+    },
+    # 右目
+    Transform {
+      translation 0.25 0 0.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+          geometry Sphere {
+            radius 0.125
+          }
+        }
+      ]
+    },
+    # 左目
+    Transform {
+      translation -0.25 0 0.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+          geometry Sphere {
+            radius 0.125
+          }
+        }
+      ]
+    },
+    # 鼻
+    Transform {
+      translation 0 -0.25 0.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 0.6 0.6
+            }
+          }
+          geometry Cone {
+            bottomRadius 0.0625
+            height 0.125
+          }
+        }
+      ]
+    },
+    # 口
+    Transform {
+      translation 0 -0.5 0.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+          geometry Cylinder {
+            radius 0.125
+            height 0.0625
+          }
+        }
+      ]
+    },
+    # 右ひげ
+    Transform {
+      translation 0.25 -0.5 0.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+          geometry Cylinder {
+            radius 0.015
+            height 0.5
+          }
+        }
+      ]
+    },
+    # 左ひげ
+    Transform {
+      translation -0.25 -0.5 0.5
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+          geometry Cylinder {
+            radius 0.015
+            height 0.5
+          }
+        }
+      ]
+    }
+  ]
+}
