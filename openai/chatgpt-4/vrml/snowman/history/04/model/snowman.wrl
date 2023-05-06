@@ -1,0 +1,103 @@
+#VRML V2.0 utf8
+
+Transform {
+  children [
+    # 雪だるまの下部分
+    Transform {
+      translation 0 -1 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 1
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # 雪だるまの中央部分
+    Transform {
+      translation 0 0 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.7
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # 雪だるまの頭部分
+    Transform {
+      translation 0 1 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.5
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # 雪だるまの目（左）
+    Transform {
+      translation -0.25 1.1 0.4
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.1
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+        }
+      ]
+    }
+    # 雪だるまの目（右）
+    Transform {
+      translation 0.25 1.1 0.4
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.1
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+        }
+      ]
+    }
+    # 雪だるまの鼻
+    Transform {
+      translation 0 1.0 0.45
+      children [
+        Shape {
+          geometry Cone {
+            bottomRadius 0.08
+            height 0.4
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 0.5 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

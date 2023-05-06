@@ -1,0 +1,88 @@
+#VRML V2.0 utf8
+
+Transform {
+  children [
+    # Snowman base
+    Transform {
+      translation 0 -1 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 1
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # Snowman body
+    Transform {
+      translation 0 0 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.7
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # Snowman head
+    Transform {
+      translation 0 1 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.5
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # Left eye
+    Transform {
+      translation -0.3 1.1 0.4
+      children [
+        Shape {
+          geometry Cone {
+            bottomRadius 0.1
+            height 0.2
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+        }
+      ]
+    }
+    # Right eye
+    Transform {
+      translation 0.3 1.1 0.4
+      children [
+        Shape {
+          geometry Cone {
+            bottomRadius 0.1
+            height 0.2
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

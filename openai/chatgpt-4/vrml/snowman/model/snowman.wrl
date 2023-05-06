@@ -1,0 +1,88 @@
+#VRML V2.0 utf8
+
+Transform {
+  children [
+    # 下半身
+    Transform {
+      translation 0 -0.5 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.5
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # 胴体
+    Transform {
+      translation 0 0 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.4
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # 頭
+    Transform {
+      translation 0 0.5 0
+      children [
+        Shape {
+          geometry Sphere {
+            radius 0.3
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 1 1 1
+            }
+          }
+        }
+      ]
+    }
+    # 左目
+    Transform {
+      translation -0.1 0.55 0.25
+      children [
+        Shape {
+          geometry Cone {
+            bottomRadius 0.05
+            height 0.1
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+        }
+      ]
+    }
+    # 右目
+    Transform {
+      translation 0.1 0.55 0.25
+      children [
+        Shape {
+          geometry Cone {
+            bottomRadius 0.05
+            height 0.1
+          }
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
